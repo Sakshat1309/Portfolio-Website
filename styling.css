@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* navbar styling */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+
+}
+.navbar{
+    position:fixed;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 999;
+    /* background-color: crimson; */
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background-color: crimson;
+
+}
+.navbar.sticky .logo a{
+    color:white;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+
+}
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color:crimson;
+    transition: all 0.3s ease;
+
+}
+
+
+.navbar .logo a span{
+  color: white;
+}
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+    font-size: 22px;
+    transition: color 0.5s ease;
+}
+.navbar.sticky .menu li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+/* home section styling */
+.home{
+    display: flex;
+    height: 100vh;
+    background-image: url("backgroundweb.jpg") ;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+.home .max-width{
+    margin-left: 50px;
+    
+}
+.home .home-content .text-1{
+    font-size: 27px;
+
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+
+}
+.home .home-content .text-3{
+    font-size: 32px;
+    margin: 5px 0px ;   
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px ;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: white;
+    background: none;
+    font-size: 23px;
+
+}
+/* similar styling code  */
+section{
+    padding: 100px 0px;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+section .title::after{
+    
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: crimson;
+    background: white;
+    transform: translateX(-50%);
+
+}
+/* about section styling */
+
+.about,.education{
+    font-family: 'Poppins',sans-serif;
+}
+
+.about .title::after{
+content: "Who I am";
+}
+.about .about-content,.education.ed-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 25px;
+    padding: 10px 30px ;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+    font-size: 23px;
+}
+.abou .about-content .coloumn{
+    width: 50%;
+
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: contain;
+    border:2px solid black;
+    border-radius: 12px;
+    padding: -20px;
+}
+/* education section styling */
+.education .ed-content{
+    height: 400px;
+    
+}
+.education .ed-content .card{
+    margin-top: 40px;
+    display: inline-block;
+    width: 30%;
+    background: rgb(54, 54, 54);
+    border-radius: 6px;
+    padding: 25px 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+.education .ed-content .card i{
+    font-size: 50px;
+    color: crimson;
+}
+.education .ed-content .card.box{
+    transition: all 0.3s ease;
+}
+.education .ed-content .card:hover{
+    background: crimson;
+    transform: scale(1.05);
+
+}
+.education .ed-content .card:hover i{
+    color: white;
+
+}
+.education .ed-content .card.text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px;
+    
+
+}
+.education .title::before{
+     background: white;
+}
+.education .title::after{
+  content: "What I Know";
+  background: rgba(0, 0, 0, 0.993);
+}
+.education{
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.993);
+}
